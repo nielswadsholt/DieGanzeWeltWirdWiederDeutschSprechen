@@ -2,7 +2,11 @@
 
 namespace Ordnung
 {
-    public class Konsole
+    /// <summary>
+    /// Stellt die standardmäßigen Eingabe-, Ausgabe- und Fehlerströme für Konsolenanwendungen dar.
+    /// Diese Klasse kann nicht vererbt werden.
+    /// </summary>
+    public static class Konsole
     {
         public static void Schreiben(string botschaft) => Console.WriteLine(botschaft);
 
