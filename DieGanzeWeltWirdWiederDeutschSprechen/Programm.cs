@@ -7,7 +7,7 @@ namespace DieGanzeWeltWirdWiederDeutschSprechen
     {
         static void Main(string[] args)
         {
-            var schlüsselInfo = Konsole.SchlüsselEinlesen();
+            var schlüsselInfo = Konsole.SchlüsselEinlesen(true);
 
             Konsole.Schreiben(schlüsselInfo.SchlüsselZeichen.ZumZeichenfolge());
         }
