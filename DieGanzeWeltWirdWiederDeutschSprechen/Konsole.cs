@@ -14,17 +14,17 @@ namespace Ordnung
         ///   Ruft das nächste vom Benutzer gedrückte Zeichen oder die nächste Funktionstaste ab.
         ///   Die gedrückte Taste wird optional im Konsolenfenster angezeigt.
         /// </summary>
-        /// <parameters>
-        ///   abfangen:
-        ///     Bestimmt, ob die gedrückte Taste im Konsolenfenster angezeigt wird. wahr, um die
-        ///     gedrückte Taste nicht anzuzeigen; ansonsten falsch.
-        /// </parameters>
+        /// <param name="abfangen">
+        ///   Bestimmt, ob die gedrückte Taste im Konsolenfenster angezeigt wird. wahr, um die
+        ///   gedrückte Taste nicht anzuzeigen; ansonsten falsch.
+        /// </param>
         /// <returns>
-        ///   Ein Objekt, das die System.ConsoleKey-Konstante und ggf.das Unicode-Zeichen beschreibt,
-        ///   die der gedrückten Konsolentaste entsprechen.Das System.ConsoleKeyInfo-Objekt beschreibt
-        ///   außerdem in einer bitweisen Kombination von System.ConsoleModifiers-Werten, ob eine oder
-        ///   mehrere Umschalt-, Alt- oder Strg-Modifikatortasten gleichzeitig mit der Konsolentaste
-        ///   gedrückt wurden.
+        ///   Ein Objekt, das die <see cref="System.ConsoleKey"/>-Konstante und ggf.das
+        ///   Unicode-Zeichen beschreibt, die der gedrückten Konsolentaste entsprechen. Das
+        ///   <see cref="InformationenZuKonsolenschlüsseln"/>-Objekt beschreibt außerdem in
+        ///   einer bitweisen Kombination von <see cref="System.ConsoleModifiers"/>-Werten, ob
+        ///   eine oder mehrere Umschalt-, Alt- oder Strg-Modifikatortasten gleichzeitig mit der
+        ///   Konsolentaste gedrückt wurden.
         /// </returns>
         /// <exception cref="System.InvalidOperationException">
         ///   Die Eigenschaft System.Console.In wird von einem anderen Strom als der Konsole
