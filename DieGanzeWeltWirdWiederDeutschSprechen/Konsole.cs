@@ -55,9 +55,9 @@ namespace Ordnung
     /// <summary>
     /// Stellt ein Zeichen als UTF-16-Einheit dar.
     /// </summary>
-    public struct Zeichen
+    public readonly struct Zeichen
     {
-        private char zeichen;
+        private readonly char zeichen;
 
         public Zeichen(char zeichen)
         {
