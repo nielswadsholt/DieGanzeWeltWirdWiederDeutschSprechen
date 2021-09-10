@@ -46,9 +46,24 @@ namespace Ordnung
         }
         
         public ConsoleKey Schlüssel { get; }
-        public char SchlüsselZeichen { get; }
+        public Zeichen SchlüsselZeichen { get; }
 
-        public static implicit operator InformationenZuKonsolenschlüsseln(ConsoleKeyInfo consoleKeyInfo)
-            => new InformationenZuKonsolenschlüsseln(consoleKeyInfo);
+        public static implicit operator InformationenZuKonsolenschlüsseln(ConsoleKeyInfo informationenZuKonsolenschlüsseln)
+            => new InformationenZuKonsolenschlüsseln(informationenZuKonsolenschlüsseln);
+    }
+
+    /// <summary>
+    /// Stellt ein Zeichen als UTF-16-Einheit dar.
+    /// </summary>
+    public struct Zeichen
+    {
+        private char zeichen;
+
+        public Zeichen(char zeichen)
+        {
+            this.zeichen = zeichen;
+        }
+        public static implicit operator Zeichen(char zeichen) => new Zeichen(zeichen);
+        public static implicit operator char(Zeichen zeichen) => zeichen.zeichen;
     }
 }
