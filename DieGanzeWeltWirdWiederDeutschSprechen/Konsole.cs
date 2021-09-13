@@ -63,6 +63,7 @@ namespace Ordnung
         {
             this.zeichen = zeichen;
         }
+
         public static implicit operator Zeichen(char zeichen) => new Zeichen(zeichen);
         public static implicit operator char(Zeichen zeichen) => zeichen.zeichen;
     }
